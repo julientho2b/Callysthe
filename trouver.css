@@ -1,0 +1,307 @@
+/* ========================================
+   NOUS TROUVER
+======================================== */
+
+.find-hero {
+  background: var(--vert-sauge);
+  padding: 7rem 2rem 6rem;
+}
+
+.find-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.find-hero-content p:first-child {
+  color: var(--vert-fonce);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.find-intro p,
+.find-cta p {
+  color: var(--creme);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.find-hero-content h1 {
+  font-family: var(--font-titre);
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--creme);
+}
+.find-intro h2,
+.find-cta h2 {
+  font-family: var(--font-titre);
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--vert-nuit);
+}
+
+.find-hero-content h1 {
+  font-size: clamp(4rem, 8vw, 7rem);
+  margin-bottom: 2rem;
+}
+
+.find-hero-content p:last-child {
+  max-width: 600px;
+  color: var(--vert-fonce);
+  font-family: var(--font-texte);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ========================================
+   FRANCE
+======================================== */
+
+.find-section {
+  background: var(--creme);
+  padding: 7rem 2rem;
+}
+
+.find-intro {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+}
+
+.find-intro h2 {
+  font-size: clamp(3.5rem, 6vw, 6rem);
+}
+
+/* ========================================
+   GRANDES RÉGIONS
+======================================== */
+
+.find-region {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.find-region > h3 {
+  font-family: var(--font-titre);
+  color: var(--vert-fonce);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.find-france {
+  margin-top: 7rem;
+}
+
+/* ========================================
+   ACCORDÉONS
+======================================== */
+
+.find-region details {
+  border-top: 1px solid var(--bordure);
+}
+
+.find-region details:last-child {
+  border-bottom: 1px solid var(--bordure);
+}
+
+.find-region summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  color: var(--vert-fonce);
+  font-family: var(--font-titre);
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.find-region summary::-webkit-details-marker {
+  display: none;
+}
+
+.find-region summary::after {
+  content: "+";
+  font-family: var(--font-texte);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.find-region details[open] summary::after {
+  content: "−";
+}
+
+/* ========================================
+   VILLES
+======================================== */
+
+.find-city {
+  padding: 1.5rem 0 3rem;
+}
+
+.find-city h4 {
+  color: var(--vert-nuit);
+  font-family: var(--font-texte);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+/* ========================================
+   CARTES
+======================================== */
+
+.find-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.find-card {
+  background: var(--creme-vert);
+  border: 1px solid var(--bordure);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.find-card h5 {
+  color: var(--vert-fonce);
+  font-family: var(--font-texte);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.find-card p {
+  color: var(--texte-doux);
+  font-family: var(--font-texte);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ========================================
+   INTERNATIONAL
+======================================== */
+
+.find-international {
+  background: var(--vert-sauge);
+  padding: 7rem 2rem;
+}
+
+.find-international .find-intro h2 {
+  color: var(--vert-fonce);
+}
+
+.find-international .find-intro p {
+  color: var(--creme);
+}
+
+.find-international .find-region summary {
+  color: var(--creme);
+}
+
+.find-international .find-card {
+  background: var(--creme);
+  border-color: var(--bordure);
+}
+
+.find-international .find-card h5 {
+  color: var(--vert-fonce);
+}
+
+.find-international .find-card p {
+  color: var(--texte-doux);
+}
+
+.find-international .find-region details {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+/* ========================================
+   CTA
+======================================== */
+
+.find-cta {
+  background: var(--creme);
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+.find-cta p {
+  color: var(--vert-fonce);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.find-cta h2 {
+  color: var(--vert-nuit);
+  font-family: var(--font-titre);
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.find-cta a {
+  color: var(--vert-fonce);
+  font-family: var(--font-texte);
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--vert-fonce);
+  padding-bottom: 0.2rem;
+}
+
+.find-cta a:hover {
+  background: var(--vert-sauge);
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+  .find-hero {
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  .find-hero-content h1 {
+    font-size: clamp(3.5rem, 15vw, 5rem);
+  }
+
+  .find-section,
+  .find-international,
+  .find-cta {
+    padding: 5rem 1.5rem;
+  }
+
+  .find-intro {
+    margin-bottom: 3rem;
+  }
+
+  .find-intro h2,
+  .find-cta h2 {
+    font-size: clamp(3rem, 13vw, 4.5rem);
+  }
+
+  .find-france {
+    margin-top: 5rem;
+  }
+
+  .find-region summary {
+    font-size: 1.7rem;
+  }
+
+  .find-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .find-card {
+    padding: 1.3rem;
+  }
+}
